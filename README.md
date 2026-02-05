@@ -49,7 +49,7 @@ docker compose exec app php bin/console doctrine:migrations:migrate
 
 ---
 
-### 2️⃣ Demo User Setup (Development Only)
+### 3️⃣ Demo User Setup (Development Only)
 
 These steps are intended for local development and demonstration purposes only.
 
@@ -59,7 +59,6 @@ These steps are intended for local development and demonstration purposes only.
 
 ```
 docker compose exec -it db psql -U app -d app
-
 
 INSERT INTO "user" (email, roles, password)
 VALUES ('admin@example.com', '["ROLE_USER"]', 'HASH_HERE');
