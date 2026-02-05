@@ -87,31 +87,31 @@ Use the Authorize button and paste the JWT token (without 'Bearer').
 
 ## Categories
 
-POST /api/categories
-{ "name": "Groceries" }
-Owner is automatically assigned from the authenticated user.
+_POST /api/categories_
+_{ "name": "Groceries" }_
+_Owner is automatically assigned from the authenticated user._
 
 ---
 
 ## Transactions
 
-POST /api/transactions
-{
+_POST /api/transactions_
+_{
 "amount": 55.75,
 "description": "Grocery shopping",
 "type": "expense",
 "date": "2023-11-05",
 "category": "/api/categories/1"
-}
+}_
 
 ---
 
 ## Security & Architecture
 
-• Stateless JWT authentication
-• Owner fields are not writable from requests
-• Ownership enforced server-side using processors
-• Clean separation of concerns
+- Stateless JWT authentication
+- Owner fields are not writable from requests
+- Ownership enforced server-side using processors
+- Clean separation of concerns
 
 ---
 
