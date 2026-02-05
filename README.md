@@ -42,8 +42,6 @@ cd your-repo
 
 ### 2️⃣ Running the Project (Docker)
 
-## Blocks of code
-
 ```
 docker compose up --build
 docker compose exec app php bin/console doctrine:migrations:migrate
@@ -59,8 +57,6 @@ These steps are intended for local development and demonstration purposes only.
    docker compose exec app php bin/console security:hash-password
 2. Insert user into database:
 
-## Blocks of code
-
 ```
 docker compose exec -it db psql -U app -d app
 INSERT INTO "user" (email, roles, password)
@@ -71,8 +67,6 @@ VALUES ('admin@example.com', '["ROLE_USER"]', 'HASH_HERE');
 ---
 
 ## Authentication (JWT)
-
-## Blocks of code
 
 ```
 POST /api/login_check
