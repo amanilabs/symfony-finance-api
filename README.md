@@ -36,8 +36,8 @@ This project demonstrates real-world backend patterns: authentication, authoriza
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo.git
-cd your-repo
+git clone https://github.com/amanilabs/symfony-finance-api.git
+cd symfony-finance-api
 ```
 
 ### 2️⃣ Running the Project (Docker)
