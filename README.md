@@ -59,6 +59,8 @@ These steps are intended for local development and demonstration purposes only.
 
 ```
 docker compose exec -it db psql -U app -d app
+
+
 INSERT INTO "user" (email, roles, password)
 VALUES ('admin@example.com', '["ROLE_USER"]', 'HASH_HERE');
 \q
@@ -88,7 +90,9 @@ Use the Authorize button and paste the JWT token (without 'Bearer').
 ## Categories
 
 _POST /api/categories_
+
 _{ "name": "Groceries" }_
+
 _Owner is automatically assigned from the authenticated user._
 
 ---
@@ -96,6 +100,7 @@ _Owner is automatically assigned from the authenticated user._
 ## Transactions
 
 _POST /api/transactions_
+
 _{
 "amount": 55.75,
 "description": "Grocery shopping",
