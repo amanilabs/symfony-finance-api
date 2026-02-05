@@ -83,6 +83,7 @@ Returns a JWT token used for secured requests.
 ## Swagger API Documentation
 
 URL: http://127.0.0.1:8000/api/docs
+
 Use the Authorize button and paste the JWT token (without 'Bearer').
 
 ---
